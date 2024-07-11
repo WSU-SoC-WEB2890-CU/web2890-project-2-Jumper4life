@@ -1,0 +1,102 @@
+/* Variables */
+$primarybackground: #46484A;
+$footerheader: #9FA3A7;
+$primaryaccent: #4D0400;
+$secondaryaccent: #2B3355;
+$text: #ffffff;
+
+/* Main styles */
+body {
+  font-family: 'Crimson Text';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  background-color: $primarybackground;
+  color: $text;
+
+  .navbar-brand {
+    color: $text;
+  }
+
+  .nav-link {
+    color: $text;
+  }
+}
+
+.description {
+  padding: .5rem 0;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+
+.form {
+  padding: 2rem 0;
+}
+
+.accordion-button {
+  background-color: $primarybackground;
+  color: $footerheader;
+
+  &:not(.collapsed) {
+    color: $primarybackground;
+    background-color: $footerheader;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: $footerheader;
+  color: $text;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer form {
+  align-items: center;
+}
+
+/* Contact and FAQ section alignment */
+#contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .heading-line {
+    height: 3px;
+    width: 100px;
+    background-color: $primaryaccent;
+    margin: 0 auto 20px auto;
+  }
+}
+
+#faq {
+  margin-top: 40px;
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .heading-line {
+    height: 3px;
+    width: 100px;
+    background-color: $primaryaccent;
+    margin: 0 auto 20px auto;
+  }
+}

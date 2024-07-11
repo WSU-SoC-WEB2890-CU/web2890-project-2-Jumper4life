@@ -6,7 +6,7 @@ $secondaryaccent: #2B3355;
 $text: #ffffff;
 @use '_about.scss';
 @import 'contact.scss';
-@import 'galleries.scss';
+
 @import "bootstrap/scss/bootstrap.scss";
 body{
     background-color: $primarybackground;
@@ -52,6 +52,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: $footerheader;
+    color: $text;
   }
   
   .navbar-brand, .nav-link {
@@ -79,7 +80,7 @@ body {
     transition: opacity 1s ease;
 }
   
-.portfolio-info {
+.portfolio-info-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +89,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primaryaccent;
+    background-color: $secondaryaccent;
     color: white;
     opacity: 0;
     transition: opacity 1.5s ease;
@@ -100,11 +101,11 @@ body {
     opacity: 0.2;
 }
   
-.portfolio-box:hover .portfolio-info {
+.portfolio-box:hover .portfolio-info-2 {
     opacity: 1;
 }
   
-.portfolio-info h2 {
+.portfolio-info-2 h2 {
     margin: 0;
 }
 
