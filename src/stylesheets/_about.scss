@@ -10,24 +10,8 @@ body {
     font-family: 'Crimson Text';
     background-color: $primarybackground;
     color: $text;
-
-    /* Default font size */
-    font-size: 16px;
-
-    @media (min-width: 576px) {
-        font-size: 18px; 
-    }
-
-    @media (min-width: 768px) {
-        font-size: 20px; 
-    }
-
-    @media (min-width: 992px) {
-        font-size: 28px; 
-    }
+    font-size: 28px;
 }
-
-
 
 .jumbotron {
     background-color: $primarybackground;
@@ -39,16 +23,20 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     .author-image {
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
         border-radius: 50%;
-        align-items: center;
+        border: solid 3px $primaryaccent;
+        margin-bottom: 20px;
     }
+
     .author-description {
         color: $text;
         text-align: center;
         padding: 20px;
+        font-size: large;
 
         @media (min-width: 768px) {
             text-align: left;
@@ -71,6 +59,50 @@ footer {
 
     form {
         align-items: center;
+    }
+}
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .portfolio-box {
+        height: auto;
+    }
+
+    .portfolio-box img {
+        width: 100%; 
+        height: 200px; 
+        object-fit: cover; 
+        opacity: 1;
+    }
+
+    .portfolio-box:hover img {
+        opacity: 1;
+    }
+
+    .portfolio-info-2 {
+        opacity: 1;
+        position: static;
+        background-color: $secondaryaccent;
+    }
+
+    .portfolio-info-2 h2 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+
+        .author-image {
+            margin-bottom: 20px;
+        }
+
+        .author-description {
+            text-align: center;
+        }
     }
 }
 
