@@ -10,48 +10,9 @@ body {
   font-family: 'Crimson Text';
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+ 
 }
 
-main {
-  flex: 1;
-}
-
-.navbar {
-  background-color: $primarybackground;
-  color: $text;
-
-  .navbar-brand {
-    color: $text;
-  }
-
-  .nav-link {
-    color: $text;
-  }
-}
-
-.description {
-  padding: .5rem 0;
-  text-align: center;
-
-  @media (min-width: 992px) {
-    text-align: left;
-  }
-}
-
-.form {
-  padding: 2rem 0;
-}
-
-.accordion-button {
-  background-color: $primarybackground;
-  color: $footerheader;
-
-  &:not(.collapsed) {
-    color: $primarybackground;
-    background-color: $footerheader;
-  }
-}
 
 /* Footer */
 footer {
@@ -69,34 +30,51 @@ footer form {
   align-items: center;
 }
 
-/* Contact and FAQ section alignment */
-#contact {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.contact-faq{
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Crimson Text';
 
-  .logo {
+  h2{
     margin-bottom: 20px;
   }
 
-  .heading-line {
-    height: 3px;
-    width: 100px;
-    background-color: $primaryaccent;
-    margin: 0 auto 20px auto;
-  }
-}
-
-#faq {
-  margin-top: 40px;
-
-  .logo {
+  p{
     margin-bottom: 20px;
   }
 
-  .heading-line {
-    height: 3px;
-    width: 100px;
-    background-color: $primaryaccent;
-    margin: 0 auto 20px auto;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact, .faq{
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input, textarea{
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+      
+      }
+
+    button{
+      background-color: $primaryaccent;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+
+    }
   }
 }

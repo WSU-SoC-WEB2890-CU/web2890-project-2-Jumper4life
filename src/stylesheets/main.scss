@@ -40,28 +40,30 @@ p{
 
 /*Nav*/
 
+/* Navigation */
 body {
     margin: 0;
 }
-.navbar-toggler{
-    background-color: $secondaryaccent;
-    border: none;
-}
-
 .navbar {
     margin: 0;
     padding: 0;
     background-color: $footerheader;
-  }
-  
-  .navbar-brand, .nav-link {
-    color: $text ; 
-    transition: color 0.3s ease; 
-  }
-  
-  .navbar-brand:hover, .nav-link:hover {
+    color: $text;
+}
+
+.navbar-brand, .nav-link {
+    color: $text; /* Change this to your desired color */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
     color: $secondaryaccent;
-  }
+}
+
+.navbar-toggler {
+    background-color: $secondaryaccent;
+    border: none;
+}
 
 /*Album Covers*/
   
@@ -104,8 +106,29 @@ body {
     opacity: 1;
 }
   
-.portfolio-info h2 {
-    margin: 0;
+
+@media (max-width: 767px) {
+    .portfolio-box {
+        height: auto; 
+    }
+
+    .portfolio-box img {
+        opacity: 1; 
+    }
+
+    .portfolio-box:hover img {
+        opacity: 1; 
+    }
+
+    .portfolio-info {
+        opacity: 1; 
+        position: static; 
+        background-color: $primaryaccent; 
+    }
+
+    .portfolio-info h2 {
+        margin: 0;
+    }
 }
 
 
@@ -122,5 +145,7 @@ footer{
         align-items: center;
     }
 }
+
+
 
 @import "bootstrap-icons/font/bootstrap-icons.css";
