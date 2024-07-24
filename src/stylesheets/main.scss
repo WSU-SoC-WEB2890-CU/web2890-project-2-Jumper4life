@@ -7,6 +7,7 @@ $text: #ffffff;
 @use '_about.scss';
 @import 'contact.scss';
 @import 'galleries.scss';
+@import 'individualpages.scss';
 @import "bootstrap/scss/bootstrap.scss";
 body{
     background-color: $primarybackground;
@@ -52,7 +53,7 @@ body {
 }
 
 .navbar-brand, .nav-link {
-    color: $text; /* Change this to your desired color */
+    color: $text; 
     transition: color 0.3s ease;
 }
 
@@ -128,6 +129,7 @@ body {
 
     .portfolio-info h2 {
         margin: 0;
+        text-decoration: none;
     }
 }
 
