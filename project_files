@@ -1,1 +1,10 @@
 
+I am very happy with how the project turned out. I feel that it flows smoothy and is pleasant for users to navigate and look at. 
+
+For the changes that I made from my users. The first tester pointed out some functionality issues with the main album page. I fixed that and adjusted the alignment of the about the author page. My second user suggested that I removed the hover on the mobile version and have the name of the picture appear instead. This was a really good idea as it improved the use on a mobile device. The name of the picture was clear and easily found. My third tester suggested adding a bit of color to the webpage, so I added a border around each image. I originally was worried that this would wash out the image but once I got it set up the boarder makes the images pop and stand out nicely against the background of the site. I also rearranged on my contact page to have the frequently asked questions above the contact form that way the user would see those options and possibly have their question answered. 
+
+I used free images for all the photos including the photographer from unslpash.com. I also used bootstrap base code that I modified to fit the website. 
+
+I choose not to use a black background as I have found that it can fade the color of the pictures. A soft, steely gray allows for all colors to stand out even if the image is black and white. The addition of the border allows for a bit more definition of the image. 
+
+I created a hover feature for when the person hovers their mouse over the image it the image itself fades to a deep maroon and the title of the image appears. I created the hover in a way that when someone is using a phone to look at the website that hover is no longer a feature and the name of the image is below the image itself. This allows for an easier time navigating the site on a mobile device. 
