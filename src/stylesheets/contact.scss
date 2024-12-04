@@ -1,0 +1,80 @@
+/* Variables */
+$primarybackground: #46484A;
+$footerheader: #9FA3A7;
+$primaryaccent: #4D0400;
+$secondaryaccent: #2B3355;
+$text: #ffffff;
+
+/* Main styles */
+body {
+  font-family: 'Crimson Text';
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+/* Footer */
+footer {
+  background-color: $footerheader;
+  color: $text;
+  padding: 20px 0;
+  margin-top: 20px;
+
+  p {
+      margin: 0;
+  }
+
+  form {
+      align-items: center;
+  }
+}
+
+.contact-faq{
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Crimson Text';
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  p{
+    margin-bottom: 20px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact, .faq{
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input, textarea{
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+      
+      }
+
+    button{
+      background-color: $primaryaccent;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+
+    }
+  }
+}

@@ -6,14 +6,13 @@ $secondaryaccent: #2B3355;
 $text: #ffffff;
 @use '_about.scss';
 @import 'contact.scss';
-@import 'galleries.scss';
-@import 'individualpages.scss';
+
 @import "bootstrap/scss/bootstrap.scss";
 body{
     background-color: $primarybackground;
     overflow: scroll;
     padding-bottom: 20px;
-    margin: 40px;
+    margin: 10px;
 }
 
 
@@ -39,32 +38,6 @@ p{
 }
 
 
-/*Nav*/
-
-/* Navigation */
-body {
-    margin: 0;
-}
-.navbar {
-    margin: 0;
-    padding: 0;
-    background-color: $footerheader;
-    color: $text;
-}
-
-.navbar-brand, .nav-link {
-    color: $text; 
-    transition: color 0.3s ease;
-}
-
-.navbar-brand:hover, .nav-link:hover {
-    color: $secondaryaccent;
-}
-
-.navbar-toggler {
-    background-color: $secondaryaccent;
-    border: none;
-}
 
 /*Album Covers*/
   
@@ -82,7 +55,7 @@ body {
     transition: opacity 1s ease;
 }
   
-.portfolio-info {
+.portfolio-info-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,7 +64,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primaryaccent;
+    background-color: $secondaryaccent;
     color: white;
     opacity: 0;
     transition: opacity 1.5s ease;
@@ -103,34 +76,40 @@ body {
     opacity: 0.2;
 }
   
-.portfolio-box:hover .portfolio-info {
+.portfolio-box:hover .portfolio-info-2 {
     opacity: 1;
 }
-  
-
 @media (max-width: 767px) {
     .portfolio-box {
-        height: auto; 
+        height: auto;
     }
 
     .portfolio-box img {
-        opacity: 1; 
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        opacity: 1;
     }
 
     .portfolio-box:hover img {
-        opacity: 1; 
+        opacity: 1;
     }
 
-    .portfolio-info {
-        opacity: 1; 
-        position: static; 
-        background-color: $primaryaccent; 
+    .portfolio-info-2 {
+        opacity: 1;
+        position: static;
+        background-color: $secondaryaccent;
     }
 
-    .portfolio-info h2 {
+    .portfolio-info-2 h2 {
         margin: 0;
-        text-decoration: none;
+        padding: 10px;
     }
+}
+
+
+.portfolio-info-2 h2 {
+    margin: 0;
 }
 
 
@@ -147,7 +126,5 @@ footer{
         align-items: center;
     }
 }
-
-
 
 @import "bootstrap-icons/font/bootstrap-icons.css";
